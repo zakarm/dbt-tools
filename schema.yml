@@ -1,12 +1,18 @@
 version: 2
 
 macros:
-  - name: last_day_of_month
-    description: "Returns the last day of the month for a given date column"
-
   - name: safe_divide
-    description: "Returns safe division. If denominator is 0, returns default."
+    description: "Safely divides two numbers, avoids division by zero."
+
+  - name: last_day_of_month
+    description: "Returns the last day of the month for a given date column."
+
+  - name: snake_case
+    description: "Converts a string to snake_case."
 
 tests:
   - name: assert_positive
-    description: "Checks if all values in a column are positive."
+    description: "Check if a column has only positive values."
+
+  - name: assert_not_null
+    description: "Checks if a column has no NULLs."
