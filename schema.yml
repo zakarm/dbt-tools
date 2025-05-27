@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: last_day_of_month
+    description: "Returns the last day of the month for a given date column"
+
+  - name: safe_divide
+    description: "Returns safe division. If denominator is 0, returns default."
+
+tests:
+  - name: assert_positive
+    description: "Checks if all values in a column are positive."

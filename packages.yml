@@ -1,0 +1,3 @@
+packages:
+  - git: "https://github.com/zakariae/dbt-tools.git"
+    revision: "main"

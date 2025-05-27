@@ -1,0 +1,16 @@
+name: "dbt_tools"
+version: "0.1.0"
+config-version: 2
+
+profile: "default"
+
+macro-paths: ["macros"]
+test-paths: ["tests"]
+model-paths: ["models"]
+target-path: "target"
+
+dispatch:
+  - macro_namespace: dbt_tools
+    search_order: [dbt_tools, dbt]
+
+require-dbt-version: ">=1.5.0"
